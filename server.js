@@ -40,6 +40,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('strict routing', false);
 app.disable('x-powered-by');
 
+// www.azac.ch → azac.ch (une seule adresse principale, en gardant la page demandée)
+app.use((req, res, next) => {
+  const host = req.headers.host || '';
+  if (host.startsWith('www.')) return res.redirect(301, `https://${host.slice(4)}${req.originalUrl}`);
+  next();
+});
+
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: '1d' }));
 
 const render = (res, lang, page, view, status = 200) => {
