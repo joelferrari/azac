@@ -16,6 +16,7 @@ const site = {
 const LANGS = ['fr', 'en', 'de', 'zh'];
 const DEFAULT_LANG = LANGS[0];
 const artists = require('./data/artistes');
+const books = require('./data/livres');
 const locales = Object.fromEntries(LANGS.map((l) => [l, require(`./locales/${l}`)]));
 
 // Pages du site (les adresses traduites sont dans locales/*.js → slugs)
@@ -50,6 +51,7 @@ const render = (res, lang, page, view, status = 200) => {
     site,
     logos,
     artists,
+    books,
     langs: LANGS.map((l) => ({ code: l, label: locales[l].label, name: locales[l].name })),
     url: (p, l = lang) => urlFor(l, p),
     alternates: page === '404' ? [] : LANGS.map((l) => ({ lang: locales[l].htmlLang, href: urlFor(l, page) })),

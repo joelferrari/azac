@@ -16,6 +16,35 @@
   </div>
 </section>
 
+<section class="section-dark books">
+  <div class="wrap">
+    <p class="label"><%= e.books.label %></p>
+    <h2><%= e.books.h2 %></h2>
+    <p class="lead soft" style="max-width:52ch;margin-top:1.2rem"><%= e.books.lead %></p>
+    <% books.forEach((b) => { const main = b.images[0]; %>
+      <article class="book" id="<%= b.id %>">
+        <a class="book-main" href="/img/livres/<%= main.file %>.jpg" target="_blank" rel="noopener" aria-label="<%= t.artists.enlarge %> — <%= b.title %>">
+          <img src="/img/livres/<%= main.file %>-800.jpg" srcset="/img/livres/<%= main.file %>-800.jpg 800w, /img/livres/<%= main.file %>.jpg <%= main.width %>w" sizes="(max-width: 820px) 100vw, 50vw"
+               width="<%= main.width %>" height="<%= main.height %>" loading="lazy" decoding="async" alt="<%= b.title %> — <%= b.author %>">
+        </a>
+        <div class="book-text">
+          <h3 class="book-title"><%= b.title %></h3>
+          <p class="book-meta"><%= b.author %><% if (b.years) { %> · <%= b.years %><% } %></p>
+          <% b.text[lang].forEach((p) => { %><p><%= p %></p><% }) %>
+          <div class="book-thumbs">
+            <% b.images.slice(1).forEach((im) => { %>
+              <a href="/img/livres/<%= im.file %>.jpg" target="_blank" rel="noopener" aria-label="<%= t.artists.enlarge %> — <%= b.title %>">
+                <img src="/img/livres/<%= im.file %>-800.jpg" width="<%= im.width %>" height="<%= im.height %>" loading="lazy" decoding="async" alt="<%= b.title %>">
+              </a>
+            <% }) %>
+          </div>
+          <a class="book-link" href="<%= url('artistes') %>#<%= b.artist %>"><%= e.books.artistLink %> →</a>
+        </div>
+      </article>
+    <% }) %>
+  </div>
+</section>
+
 <section class="section-tint">
   <div class="wrap">
     <p class="label"><%= e.steps.label %></p>

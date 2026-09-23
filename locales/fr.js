@@ -208,6 +208,12 @@ module.exports = {
     eyebrow: 'Programme d’édition',
     h1: 'Des livres qui prolongent le travail des artistes',
     lead: 'L’association développe un programme éditorial consacré aux artistes contemporains de Suisse et de Chine. Chaque publication est pensée comme un document artistique durable.',
+    books: {
+      label: 'Nos publications',
+      h2: 'Livres d’artistes',
+      lead: 'Des livres conçus avec les artistes pour prolonger leurs œuvres au-delà de l’exposition.',
+      artistLink: 'Voir les œuvres de l’artiste',
+    },
     approach: {
       label: 'Notre démarche',
       h2: 'Valoriser, documenter, diffuser',

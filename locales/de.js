@@ -208,6 +208,12 @@ module.exports = {
     eyebrow: 'Editionsprogramm',
     h1: 'Bücher, die das Werk der Kunstschaffenden weitertragen',
     lead: 'Der Verein entwickelt ein Editionsprogramm für zeitgenössische Kunstschaffende aus der Schweiz und China. Jede Publikation ist als dauerhaftes künstlerisches Dokument gedacht.',
+    books: {
+      label: 'Unsere Publikationen',
+      h2: 'Künstlerbücher',
+      lead: 'Bücher, die gemeinsam mit den Kunstschaffenden entstehen und ihre Werke über die Ausstellung hinaus weitertragen.',
+      artistLink: 'Werke der Künstlerin ansehen',
+    },
     approach: {
       label: 'Unser Ansatz',
       h2: 'Würdigen, dokumentieren, verbreiten',

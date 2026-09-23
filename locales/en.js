@@ -208,6 +208,12 @@ module.exports = {
     eyebrow: 'Publishing programme',
     h1: 'Books that extend the artists’ work',
     lead: 'The association is developing a publishing programme devoted to contemporary artists from Switzerland and China. Each publication is conceived as a lasting artistic document.',
+    books: {
+      label: 'Our publications',
+      h2: 'Artists’ books',
+      lead: 'Books created with the artists to carry their work beyond the exhibition.',
+      artistLink: 'See the artist’s work',
+    },
     approach: {
       label: 'Our approach',
       h2: 'Showcase, document, share',
