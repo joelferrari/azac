@@ -4,10 +4,11 @@ module.exports = {
   name: '中文',
   htmlLang: 'zh-Hans',
 
-  slugs: { home: '', association: 'association', espace: 'space', edition: 'publishing', soutenir: 'support', contact: 'contact' },
-  nav: { association: '关于协会', espace: '艺术空间', edition: '艺术出版', soutenir: '支持我们', contact: '联系我们' },
+  slugs: { home: '', artistes: 'artists', association: 'association', espace: 'space', edition: 'publishing', soutenir: 'support', contact: 'contact' },
+  nav: { association: '关于协会', artistes: '艺术家', espace: '艺术空间', edition: '艺术出版', soutenir: '支持我们', contact: '联系我们' },
   titles: {
     home: '以艺术连接文化',
+    artistes: '艺术家',
     association: '关于协会',
     espace: '艺术空间',
     edition: '艺术出版',
@@ -38,12 +39,19 @@ module.exports = {
     result: '1 个月<br>展览',
   },
 
-  works: {
+  artists: {
     label: '艺术家',
     h2: '交汇的目光',
     lead: '一窥参与本项目的瑞士与中国艺术家的作品。',
+    all: '认识艺术家',
     alt: '作品：',
+    enlarge: '放大',
     countries: { ch: '瑞士', cn: '中国' },
+    page: {
+      eyebrow: '艺术家',
+      h1: '瑞士与中国艺术家',
+      lead: '绘画、版画、雕塑、摄影：认识与 Zeng Art & Culture 协会同行的艺术家。',
+    },
   },
 
   home: {

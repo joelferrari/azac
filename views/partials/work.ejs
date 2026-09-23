@@ -1,0 +1,12 @@
+<%# Une œuvre : vignette 800 px, lien vers la grande image %>
+<figure class="work reveal">
+  <a href="/img/artistes/<%= w.file %>.jpg" target="_blank" rel="noopener" aria-label="<%= t.artists.enlarge %> — <%= w.title ? w.title[lang] : t.artists.alt + ' ' + a.name %>">
+    <img src="/img/artistes/<%= w.file %>-800.jpg" width="<%= w.width %>" height="<%= w.height %>" loading="lazy" decoding="async"
+         alt="<%= w.title ? w.title[lang] + ' — ' + a.name : t.artists.alt + ' ' + a.name %>">
+  </a>
+  <% if (showArtist) { %>
+    <figcaption><span class="artist"><%= a.name %></span> <span class="country"><%= t.artists.countries[a.country] %></span></figcaption>
+  <% } else if (w.title) { %>
+    <figcaption class="work-title"><em><%= w.title[lang] %></em><span><%= w.year %> · <%= w.size %></span></figcaption>
+  <% } %>
+</figure>

@@ -22,7 +22,7 @@
         <span class="sr"><%= t.ui.menu %></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav id="nav" class="nav">
-        <% ['association', 'espace', 'edition', 'soutenir', 'contact'].forEach((p) => { %>
+        <% ['association', 'artistes', 'espace', 'edition', 'soutenir', 'contact'].forEach((p) => { %>
           <a href="<%= url(p) %>"<% if (page === p) { %> aria-current="page"<% } %>><%= t.nav[p] %></a>
         <% }) %>
         <div class="lang-switch" role="group" aria-label="<%= t.ui.languages %>">

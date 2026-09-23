@@ -4,10 +4,11 @@ module.exports = {
   name: 'Deutsch',
   htmlLang: 'de',
 
-  slugs: { home: '', association: 'verein', espace: 'raum', edition: 'edition', soutenir: 'unterstuetzen', contact: 'kontakt' },
-  nav: { association: 'Der Verein', espace: 'Der Raum', edition: 'Edition', soutenir: 'Unterstützen', contact: 'Kontakt' },
+  slugs: { home: '', artistes: 'kuenstler', association: 'verein', espace: 'raum', edition: 'edition', soutenir: 'unterstuetzen', contact: 'kontakt' },
+  nav: { association: 'Der Verein', artistes: 'Kunstschaffende', espace: 'Der Raum', edition: 'Edition', soutenir: 'Unterstützen', contact: 'Kontakt' },
   titles: {
     home: 'Wo Kunst Kulturen verbindet',
+    artistes: 'Kunstschaffende',
     association: 'Der Verein',
     espace: 'Der Kulturraum',
     edition: 'Kunstedition',
@@ -38,12 +39,19 @@ module.exports = {
     result: '1 Monat<br>Ausstellung',
   },
 
-  works: {
+  artists: {
     label: 'Kunstschaffende',
     h2: 'Gekreuzte Blicke',
     lead: 'Ein Einblick in die Arbeit Schweizer und chinesischer Kunstschaffender, die das Projekt begleiten.',
+    all: 'Die Kunstschaffenden entdecken',
     alt: 'Werk von',
+    enlarge: 'Vergrössern',
     countries: { ch: 'Schweiz', cn: 'China' },
+    page: {
+      eyebrow: 'Kunstschaffende',
+      h1: 'Kunstschaffende aus der Schweiz und China',
+      lead: 'Malerei, Druckgrafik, Skulptur, Fotografie: ein Überblick über die Kunstschaffenden, die den Verein Zeng Art & Culture begleiten.',
+    },
   },
 
   home: {

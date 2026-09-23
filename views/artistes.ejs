@@ -1,0 +1,35 @@
+<%- include('partials/top') %>
+<% const p = t.artists.page %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= p.eyebrow %></p>
+    <h1><%= p.h1 %></h1>
+    <p class="lead"><%= p.lead %></p>
+    <nav class="artist-index" aria-label="<%= p.eyebrow %>">
+      <% artists.forEach((a) => { %><a href="#<%= a.id %>"><%= a.name %></a><% }) %>
+    </nav>
+  </div>
+</header>
+
+<% artists.forEach((a, i) => { %>
+<section id="<%= a.id %>" class="artist<%= i % 2 ? ' section-tint' : '' %>">
+  <div class="wrap">
+    <header class="artist-head">
+      <img class="portrait" src="/img/artistes/portrait-<%= a.id %>.jpg" width="120" height="120" loading="lazy" alt="<%= a.name %>">
+      <div>
+        <p class="label"><%= t.artists.countries[a.country] %></p>
+        <h2><%= a.name %></h2>
+        <p class="muted"><%= a.role[lang] %><% if (a.series) { %> · <%= a.series[lang] %><% } %></p>
+      </div>
+    </header>
+    <div class="works works-4">
+      <% a.works.forEach((w) => { %>
+        <%- include('partials/work', { a, w, showArtist: false }) %>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% }) %>
+
+<%- include('partials/bottom') %>

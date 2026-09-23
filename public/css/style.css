@@ -234,3 +234,17 @@ html:lang(zh) .label, html:lang(zh) .eyebrow, html:lang(zh) .nav a, html:lang(zh
 .work figcaption { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: 0.9rem; }
 .work .artist { font-weight: 700; }
 .work .country { font-family: var(--font-wide); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); align-self: center; }
+
+/* ---------- Page Artistes ---------- */
+.works a { display: block; cursor: zoom-in; }
+.works a:hover img { opacity: .92; }
+.works-4 { columns: 4 200px; }
+.work-title { display: flex; flex-direction: column; gap: 2px; padding-top: 10px; font-size: 0.9rem; }
+.work-title span { color: var(--muted); font-size: 0.82rem; }
+.artist-index { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 2rem; }
+.artist-index a { font-family: var(--font-wide); font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.artist { scroll-margin-top: 76px; }
+.artist-head { display: flex; align-items: center; gap: clamp(18px, 3vw, 32px); }
+.artist-head .label { margin-bottom: .4rem; }
+.artist-head .muted { margin: .5rem 0 0; }
+.portrait { width: clamp(84px, 11vw, 120px); height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; flex: none; background: var(--paper-2); }

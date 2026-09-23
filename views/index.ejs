@@ -28,10 +28,11 @@
 
 <section>
   <div class="wrap">
-    <p class="label reveal"><%= t.works.label %></p>
-    <h2 class="reveal"><%= t.works.h2 %></h2>
-    <p class="lead muted reveal" style="max-width:52ch;margin-top:1.2rem"><%= t.works.lead %></p>
-    <%- include('partials/oeuvres', { limit: 6 }) %>
+    <p class="label reveal"><%= t.artists.label %></p>
+    <h2 class="reveal"><%= t.artists.h2 %></h2>
+    <p class="lead muted reveal" style="max-width:52ch;margin-top:1.2rem"><%= t.artists.lead %></p>
+    <%- include('partials/oeuvres') %>
+    <div class="actions reveal"><a class="btn" href="<%= url('artistes') %>"><%= t.artists.all %></a></div>
   </div>
 </section>
 

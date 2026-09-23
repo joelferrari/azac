@@ -4,10 +4,11 @@ module.exports = {
   name: 'English',
   htmlLang: 'en',
 
-  slugs: { home: '', association: 'about', espace: 'space', edition: 'publishing', soutenir: 'support', contact: 'contact' },
-  nav: { association: 'About', espace: 'The space', edition: 'Publishing', soutenir: 'Support', contact: 'Contact' },
+  slugs: { home: '', artistes: 'artists', association: 'about', espace: 'space', edition: 'publishing', soutenir: 'support', contact: 'contact' },
+  nav: { association: 'About', artistes: 'Artists', espace: 'The space', edition: 'Publishing', soutenir: 'Support', contact: 'Contact' },
   titles: {
     home: 'Where art connects cultures',
+    artistes: 'Artists',
     association: 'About us',
     espace: 'The cultural space',
     edition: 'Art publishing',
@@ -38,12 +39,19 @@ module.exports = {
     result: '1 month<br>exhibition',
   },
 
-  works: {
+  artists: {
     label: 'Artists',
     h2: 'Crossing perspectives',
     lead: 'A glimpse of the work of Swiss and Chinese artists who accompany the project.',
+    all: 'Meet the artists',
     alt: 'Artwork by',
+    enlarge: 'Enlarge',
     countries: { ch: 'Switzerland', cn: 'China' },
+    page: {
+      eyebrow: 'Artists',
+      h1: 'Swiss and Chinese artists',
+      lead: 'Painting, printmaking, sculpture, photography: an overview of the artists who accompany the Zeng Art & Culture Association.',
+    },
   },
 
   home: {

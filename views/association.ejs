@@ -30,10 +30,12 @@
     <div><p class="label"><%= a.artists.label %></p><h2><%= a.artists.h2 %></h2></div>
     <div>
       <% a.artists.paras.forEach((p) => { %><p><%= p %></p><% }) %>
-      <div class="actions"><a class="btn" href="<%= url('contact') %>"><%= a.artists.cta %></a></div>
+      <div class="actions">
+        <a class="btn btn-solid" href="<%= url('artistes') %>"><%= t.artists.all %></a>
+        <a class="btn" href="<%= url('contact') %>"><%= a.artists.cta %></a>
+      </div>
     </div>
   </div>
-  <div class="wrap"><%- include('partials/oeuvres') %></div>
 </section>
 
 <section class="section-dark">

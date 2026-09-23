@@ -4,10 +4,11 @@ module.exports = {
   name: 'Français',
   htmlLang: 'fr',
 
-  slugs: { home: '', association: 'association', espace: 'espace', edition: 'edition', soutenir: 'soutenir', contact: 'contact' },
-  nav: { association: 'L’association', espace: 'L’espace', edition: 'Édition', soutenir: 'Soutenir', contact: 'Contact' },
+  slugs: { home: '', artistes: 'artistes', association: 'association', espace: 'espace', edition: 'edition', soutenir: 'soutenir', contact: 'contact' },
+  nav: { association: 'L’association', artistes: 'Artistes', espace: 'L’espace', edition: 'Édition', soutenir: 'Soutenir', contact: 'Contact' },
   titles: {
     home: 'Là où l’art relie les cultures',
+    artistes: 'Artistes',
     association: 'L’association',
     espace: 'L’espace culturel',
     edition: 'Édition d’art',
@@ -38,12 +39,19 @@ module.exports = {
     result: '1 mois<br>d’exposition',
   },
 
-  works: {
+  artists: {
     label: 'Artistes',
     h2: 'Des regards croisés',
     lead: 'Un aperçu du travail d’artistes suisses et chinois qui accompagnent le projet.',
+    all: 'Découvrir les artistes',
     alt: 'Œuvre de',
+    enlarge: 'Agrandir',
     countries: { ch: 'Suisse', cn: 'Chine' },
+    page: {
+      eyebrow: 'Artistes',
+      h1: 'Des artistes suisses et chinois',
+      lead: 'Peinture, gravure, sculpture, photographie : un aperçu des artistes qui accompagnent l’Association Zeng Art & Culture.',
+    },
   },
 
   home: {
