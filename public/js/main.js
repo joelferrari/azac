@@ -1,6 +1,17 @@
 // Menu mobile
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('nav');
+
+// Recalcule le mode du menu quand la fenêtre change de taille ou quand les polices sont chargées
+if (window.fitNav) {
+  let frame;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(window.fitNav);
+  });
+  if (document.fonts) document.fonts.ready.then(window.fitNav);
+}
+
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';

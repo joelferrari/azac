@@ -33,4 +33,17 @@
       </nav>
     </div>
   </header>
+  <script>
+    // Passe au menu burger si le menu ne tient pas sur une ligne (dépend de la langue et de la largeur)
+    window.fitNav = function () {
+      var header = document.querySelector('.site-header'), inner = header.querySelector('.header-inner');
+      header.classList.remove('compact');
+      if (inner.scrollWidth > inner.clientWidth) return header.classList.add('compact');
+      // Menu complet : on referme le burger s'il était ouvert
+      var nav = document.getElementById('nav'), toggle = header.querySelector('.nav-toggle');
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    fitNav();
+  </script>
   <main id="contenu">

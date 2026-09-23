@@ -5,7 +5,7 @@ module.exports = {
   htmlLang: 'de',
 
   slugs: { home: '', artistes: 'kuenstler', association: 'verein', espace: 'raum', edition: 'edition', soutenir: 'unterstuetzen', contact: 'kontakt' },
-  nav: { association: 'Der Verein', artistes: 'Kunstschaffende', espace: 'Der Raum', edition: 'Edition', soutenir: 'Unterstützen', contact: 'Kontakt' },
+  nav: { association: 'Verein', artistes: 'Kunstschaffende', espace: 'Raum', edition: 'Edition', soutenir: 'Unterstützen', contact: 'Kontakt' },
   titles: {
     home: 'Wo Kunst Kulturen verbindet',
     artistes: 'Kunstschaffende',

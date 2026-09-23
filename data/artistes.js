@@ -56,7 +56,7 @@ module.exports = [
   },
   {
     id: 'wang-yan-ling',
-    name: 'Wang Yan Ling',
+    name: 'Wang Yanling',
     country: 'cn',
     role: { fr: 'Artiste', en: 'Artist', de: 'Künstlerin', zh: '艺术家' },
     // Plusieurs séries : chacune a son titre et ses œuvres
