@@ -264,3 +264,5 @@ html:lang(zh) .label, html:lang(zh) .eyebrow, html:lang(zh) .nav a, html:lang(zh
   .book { grid-template-columns: 1fr; }
   .book:nth-of-type(even) .book-main { order: 0; }
 }
+.set-title { margin: clamp(36px, 5vw, 56px) 0 0; font-family: var(--font-wide); font-weight: 400; font-size: 0.8rem; letter-spacing: 0.22em; color: var(--accent); padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.set-title + .works { margin-top: 1.6rem; }

@@ -7,6 +7,6 @@
   <% if (showArtist) { %>
     <figcaption><span class="artist"><%= a.name %></span> <span class="country"><%= t.artists.countries[a.country] %></span></figcaption>
   <% } else if (w.title) { %>
-    <figcaption class="work-title"><em><%= w.title[lang] %></em><span><%= w.year %> · <%= w.size %></span></figcaption>
+    <figcaption class="work-title"><em><%= w.title[lang] %></em><% if (w.year || w.size) { %><span><%= [w.year, w.size].filter(Boolean).join(' · ') %></span><% } %></figcaption>
   <% } %>
 </figure>

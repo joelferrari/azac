@@ -20,14 +20,17 @@
       <div>
         <p class="label"><%= t.artists.countries[a.country] %></p>
         <h2><%= a.name %></h2>
-        <p class="muted"><%= a.role[lang] %><% if (a.series) { %> · <%= a.series[lang] %><% } %></p>
+        <p class="muted"><%= a.role[lang] %></p>
       </div>
     </header>
-    <div class="works works-4">
-      <% a.works.forEach((w) => { %>
-        <%- include('partials/work', { a, w, showArtist: false }) %>
-      <% }) %>
-    </div>
+    <% (a.sets || [{ works: a.works }]).forEach((set) => { %>
+      <% if (set.title) { %><h3 class="set-title"><%= set.title[lang] %></h3><% } %>
+      <div class="works works-4">
+        <% set.works.forEach((w) => { %>
+          <%- include('partials/work', { a, w, showArtist: false }) %>
+        <% }) %>
+      </div>
+    <% }) %>
   </div>
 </section>
 <% }) %>

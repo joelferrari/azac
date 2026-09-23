@@ -1,6 +1,6 @@
 <%# Galerie d'accueil : la première œuvre de chaque artiste %>
 <div class="works">
   <% artists.forEach((a) => { %>
-    <%- include('work', { a, w: a.works[0], showArtist: true }) %>
+    <%- include('work', { a, w: (a.sets ? a.sets[0].works : a.works)[0], showArtist: true }) %>
   <% }) %>
 </div>
