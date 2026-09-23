@@ -226,3 +226,11 @@ section + section { border-top: 1px solid var(--line); }
 html:lang(zh) h1, html:lang(zh) h2, html:lang(zh) .quote { letter-spacing: 0.02em; line-height: 1.3; }
 html:lang(zh) .lead, html:lang(zh) p { line-height: 1.85; }
 html:lang(zh) .label, html:lang(zh) .eyebrow, html:lang(zh) .nav a, html:lang(zh) .btn, html:lang(zh) .formula .term { letter-spacing: 0.12em; }
+
+/* ---------- Galerie d'œuvres ---------- */
+.works { columns: 3 260px; column-gap: clamp(16px, 2.4vw, 32px); margin-top: 3rem; }
+.work { break-inside: avoid; margin: 0 0 clamp(20px, 3vw, 40px); }
+.work img { width: 100%; height: auto; background: var(--paper-2); }
+.work figcaption { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: 0.9rem; }
+.work .artist { font-weight: 700; }
+.work .country { font-family: var(--font-wide); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); align-self: center; }

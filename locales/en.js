@@ -38,6 +38,14 @@ module.exports = {
     result: '1 month<br>exhibition',
   },
 
+  works: {
+    label: 'Artists',
+    h2: 'Crossing perspectives',
+    lead: 'A glimpse of the work of Swiss and Chinese artists who accompany the project.',
+    alt: 'Artwork by',
+    countries: { ch: 'Switzerland', cn: 'China' },
+  },
+
   home: {
     eyebrow: 'Switzerland · China · La Tour-de-Peilz',
     h1: 'Where art connects cultures',

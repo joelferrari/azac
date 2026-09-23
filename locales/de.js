@@ -38,6 +38,14 @@ module.exports = {
     result: '1 Monat<br>Ausstellung',
   },
 
+  works: {
+    label: 'Kunstschaffende',
+    h2: 'Gekreuzte Blicke',
+    lead: 'Ein Einblick in die Arbeit Schweizer und chinesischer Kunstschaffender, die das Projekt begleiten.',
+    alt: 'Werk von',
+    countries: { ch: 'Schweiz', cn: 'China' },
+  },
+
   home: {
     eyebrow: 'Schweiz · China · La Tour-de-Peilz',
     h1: 'Wo Kunst Kulturen verbindet',

@@ -27,6 +27,15 @@
 </section>
 
 <section>
+  <div class="wrap">
+    <p class="label reveal"><%= t.works.label %></p>
+    <h2 class="reveal"><%= t.works.h2 %></h2>
+    <p class="lead muted reveal" style="max-width:52ch;margin-top:1.2rem"><%= t.works.lead %></p>
+    <%- include('partials/oeuvres', { limit: 6 }) %>
+  </div>
+</section>
+
+<section class="section-tint">
   <div class="wrap split">
     <div class="reveal">
       <p class="label"><%= h.presentation.label %></p>
@@ -39,7 +48,7 @@
   </div>
 </section>
 
-<section class="section-tint">
+<section>
   <div class="wrap">
     <p class="label reveal"><%= h.domains.label %></p>
     <h2 class="reveal"><%= h.domains.h2 %></h2>

@@ -38,6 +38,14 @@ module.exports = {
     result: '1 mois<br>d’exposition',
   },
 
+  works: {
+    label: 'Artistes',
+    h2: 'Des regards croisés',
+    lead: 'Un aperçu du travail d’artistes suisses et chinois qui accompagnent le projet.',
+    alt: 'Œuvre de',
+    countries: { ch: 'Suisse', cn: 'Chine' },
+  },
+
   home: {
     eyebrow: 'Suisse · Chine · La Tour-de-Peilz',
     h1: 'Là où l’art relie les cultures',

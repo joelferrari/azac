@@ -38,6 +38,14 @@ module.exports = {
     result: '1 个月<br>展览',
   },
 
+  works: {
+    label: '艺术家',
+    h2: '交汇的目光',
+    lead: '一窥参与本项目的瑞士与中国艺术家的作品。',
+    alt: '作品：',
+    countries: { ch: '瑞士', cn: '中国' },
+  },
+
   home: {
     eyebrow: '瑞士 · 中国 · La Tour-de-Peilz',
     h1: '以艺术连接文化',

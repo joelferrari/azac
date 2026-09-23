@@ -1,0 +1,9 @@
+<div class="works">
+  <% works.slice(0, typeof limit !== 'undefined' ? limit : works.length).forEach((w) => { %>
+    <figure class="work reveal">
+      <img src="/img/oeuvres/<%= w.file %>" width="<%= w.width %>" height="<%= w.height %>" loading="lazy" decoding="async"
+           alt="<%= t.works.alt %> <%= w.artist %>">
+      <figcaption><span class="artist"><%= w.artist %></span> <span class="country"><%= t.works.countries[w.country] %></span></figcaption>
+    </figure>
+  <% }) %>
+</div>
