@@ -1,0 +1,42 @@
+<%- include('partials/top') %>
+<% const e = t.edition %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= e.eyebrow %></p>
+    <h1><%= e.h1 %></h1>
+    <p class="lead"><%= e.lead %></p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= e.approach.label %></p><h2><%= e.approach.h2 %></h2></div>
+    <div><% e.approach.paras.forEach((p) => { %><p><%= p %></p><% }) %></div>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap">
+    <p class="label"><%= e.steps.label %></p>
+    <h2><%= e.steps.h2 %></h2>
+    <ol class="steps">
+      <% e.steps.items.forEach((s) => { %><li><%= s %></li><% }) %>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= e.contents.label %></p><h2><%= e.contents.h2 %></h2></div>
+    <div><%- include('partials/checklist', { items: e.contents.list }) %></div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="quote"><%= e.quote %></p>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>

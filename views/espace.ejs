@@ -1,0 +1,62 @@
+<%- include('partials/top') %>
+<% const e = t.espace %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= e.eyebrow %></p>
+    <h1><%= e.h1 %></h1>
+    <p class="lead"><%= e.lead %></p>
+  </div>
+</header>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="label"><%= e.concept.label %></p>
+    <h2><%= e.concept.h2 %></h2>
+    <%- include('partials/formula') %>
+    <p class="soft" style="max-width:66ch;margin-top:2.4rem"><%= e.concept.text %></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= e.experience.label %></p><h2><%= e.experience.h2 %></h2></div>
+    <div>
+      <% e.experience.paras.forEach((p) => { %><p><%= p %></p><% }) %>
+      <p class="label" style="margin-top:2.4rem"><%= e.experience.listLabel %></p>
+      <%- include('partials/checklist', { items: e.experience.list }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap">
+    <p class="label"><%= e.figures.label %></p>
+    <h2><%= e.figures.h2 %></h2>
+    <div class="figures">
+      <% e.figures.items.forEach((f) => { %>
+        <div class="figure"><span class="n"><%= f.n %></span><span class="t"><%= f.t %></span></div>
+      <% }) %>
+    </div>
+    <p class="note" style="margin-top:2.4rem"><%= e.figures.note %></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= e.why.label %></p><h2><%= e.why.h2 %></h2></div>
+    <div><%- include('partials/cards', { cards: e.why.cards, style: 'margin-top:0' }) %></div>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap split">
+    <div><p class="label"><%= e.publics.label %></p><h2><%= e.publics.h2 %></h2></div>
+    <div>
+      <p><%= e.publics.intro %></p>
+      <%- include('partials/checklist', { items: e.publics.list }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>

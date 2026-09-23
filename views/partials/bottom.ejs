@@ -1,0 +1,25 @@
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand"><%- logos.full %></div>
+      <div>
+        <p class="label"><%= t.ui.address %></p>
+        <p><%= site.name %><br><%= site.city %> · <%= t.ui.country %></p>
+      </div>
+      <div>
+        <p class="label"><%= t.ui.contact %></p>
+        <p><a href="mailto:<%= site.email %>"><%= site.email %></a></p>
+      </div>
+      <div>
+        <p class="label"><%= t.ui.navigation %></p>
+        <p><% ['association', 'espace', 'edition', 'soutenir'].forEach((p, i) => { %><%- i ? '<br>' : '' %><a href="<%= url(p) %>"><%= t.nav[p] %></a><% }) %></p>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <span>© <%= year %> <%= site.name %></span>
+      <span><%= t.ui.nonprofit %></span>
+    </div>
+  </footer>
+  <script src="/js/main.js?v=<%= v('js/main.js') %>" defer></script>
+</body>
+</html>

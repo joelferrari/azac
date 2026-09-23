@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="<%= t.htmlLang %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> · <%= site.name %></title>
+  <meta name="description" content="<%= t.ui.description %>">
+  <% alternates.forEach((a) => { %><link rel="alternate" hreflang="<%= a.lang %>" href="<%= a.href %>">
+  <% }) %><link rel="icon" href="/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=<%= v('css/style.css') %>">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#contenu"><%= t.ui.skip %></a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="<%= url('home') %>" aria-label="<%= t.ui.homeAria %> — <%= site.name %>"><%- logos.full %></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">
+        <span class="sr"><%= t.ui.menu %></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="nav" class="nav">
+        <% ['association', 'espace', 'edition', 'soutenir', 'contact'].forEach((p) => { %>
+          <a href="<%= url(p) %>"<% if (page === p) { %> aria-current="page"<% } %>><%= t.nav[p] %></a>
+        <% }) %>
+        <div class="lang-switch" role="group" aria-label="<%= t.ui.languages %>">
+          <% langs.forEach((l) => { %>
+            <a href="<%= url(page === '404' ? 'home' : page, l.code) %>" hreflang="<%= l.code %>" lang="<%= l.code %>" title="<%= l.name %>"<% if (l.code === lang) { %> aria-current="true"<% } %>><%= l.label %></a>
+          <% }) %>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">

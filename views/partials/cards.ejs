@@ -1,0 +1,5 @@
+<div class="cards<%= typeof extra !== 'undefined' ? ' ' + extra : '' %>"<% if (typeof style !== 'undefined') { %> style="<%= style %>"<% } %>>
+  <% cards.forEach((c, i) => { %>
+    <div class="card"><% if (typeof numbered !== 'undefined') { %><span class="num"><%= String(i + 1).padStart(2, '0') %></span><% } %><h3><%= c.h %></h3><p><%= c.p %></p></div>
+  <% }) %>
+</div>

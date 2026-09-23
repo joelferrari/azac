@@ -1,0 +1,23 @@
+<%- include('partials/top') %>
+<% const c = t.contact %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= c.eyebrow %></p>
+    <h1><%= c.h1 %></h1>
+    <p class="lead"><%= c.lead %></p>
+  </div>
+</header>
+
+<section style="padding-top:0">
+  <div class="wrap split">
+    <div><p class="label"><%= c.label %></p><h2><%= c.h2 %></h2></div>
+    <ul class="contact-list">
+      <li><p class="label"><%= c.email %></p><a class="v" href="mailto:<%= site.email %>"><%= site.email %></a></li>
+      <li><p class="label"><%= c.place %></p><span class="v"><%= c.placeValue %></span></li>
+      <li><p class="label"><%= c.committee %></p><span class="v"><% t.association.committee.people.forEach((p, i) => { %><%- i ? '<br>' : '' %><%= p.name %> · <%= p.role %><% }) %></span></li>
+    </ul>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>

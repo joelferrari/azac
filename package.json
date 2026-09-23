@@ -1,0 +1,19 @@
+{
+  "name": "azac-site",
+  "version": "1.0.0",
+  "description": "Site de l’Association Zeng Art & Culture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

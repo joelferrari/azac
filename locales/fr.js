@@ -1,0 +1,273 @@
+// Textes en français — langue de référence du site
+module.exports = {
+  label: 'FR',
+  name: 'Français',
+  htmlLang: 'fr',
+
+  slugs: { home: '', association: 'association', espace: 'espace', edition: 'edition', soutenir: 'soutenir', contact: 'contact' },
+  nav: { association: 'L’association', espace: 'L’espace', edition: 'Édition', soutenir: 'Soutenir', contact: 'Contact' },
+  titles: {
+    home: 'Là où l’art relie les cultures',
+    association: 'L’association',
+    espace: 'L’espace culturel',
+    edition: 'Édition d’art',
+    soutenir: 'Nous soutenir',
+    contact: 'Contact',
+  },
+
+  ui: {
+    description: 'L’Association Zeng Art & Culture crée des passerelles entre les scènes artistiques suisse et chinoise, à La Tour-de-Peilz.',
+    skip: 'Aller au contenu',
+    menu: 'Menu',
+    homeAria: 'Accueil',
+    languages: 'Langue',
+    address: 'Adresse',
+    contact: 'Contact',
+    navigation: 'Navigation',
+    country: 'Suisse',
+    nonprofit: 'Association à but non lucratif',
+    notFoundEyebrow: 'Erreur 404',
+    notFoundTitle: 'Cette page n’existe pas',
+    backHome: 'Retour à l’accueil',
+  },
+
+  formula: {
+    aria: 'Un artiste suisse, plus un artiste chinois, égale un mois d’exposition',
+    swiss: '1 artiste suisse',
+    chinese: '1 artiste chinois',
+    result: '1 mois<br>d’exposition',
+  },
+
+  home: {
+    eyebrow: 'Suisse · Chine · La Tour-de-Peilz',
+    h1: 'Là où l’art relie les cultures',
+    lead: 'L’Association Zeng Art & Culture souhaite créer des passerelles durables entre les scènes artistiques suisse et chinoise, en réunissant artistes, institutions, professionnels de l’art et publics autour de projets communs.',
+    ctaAbout: 'Découvrir l’association',
+    ctaSupport: 'Nous soutenir',
+    concept: {
+      label: 'Le concept',
+      h2: 'Art + livre + rencontre',
+      cards: [
+        { h: 'Des œuvres originales', p: 'Deux artistes présentés dans un même espace pour encourager un dialogue direct entre leurs pratiques et leurs sensibilités.' },
+        { h: 'Une publication', p: 'Chaque exposition met à l’honneur un livre d’art qui prolonge la visite et présente la démarche de l’artiste.' },
+        { h: 'Un thé chinois', p: 'Les visiteurs sont accueillis autour d’un thé traditionnel : un lieu où l’on prend le temps de se rencontrer et de discuter.' },
+      ],
+      cta: 'L’espace culturel',
+    },
+    presentation: {
+      label: 'Présentation',
+      h2: 'Un pont culturel durable entre la Chine et la Suisse',
+      lead: 'L’Association Zeng Art & Culture est une structure culturelle à but non lucratif, basée à La Tour-de-Peilz, dont la mission est de favoriser les échanges artistiques et culturels entre la Suisse et la Chine.',
+      paras: [
+        'À travers l’organisation d’expositions, de rencontres, de projets éditoriaux et d’actions de médiation culturelle, l’association souhaite créer des liens durables entre les artistes contemporains des deux pays, les institutions culturelles, les professionnels de l’art et le public.',
+        'Elle souhaite également contribuer au dynamisme culturel de la Riviera vaudoise en y développant un lieu de proximité consacré à l’art contemporain et aux échanges interculturels.',
+      ],
+    },
+    domains: {
+      label: 'Nos domaines d’action',
+      h2: 'Exposer, éditer, rencontrer',
+      cards: [
+        { h: 'Expositions artistiques', p: 'Des expositions temporaires réunissant des artistes contemporains suisses et chinois.' },
+        { h: 'Publications culturelles', p: 'Livres d’art, monographies et catalogues qui font connaître les œuvres au-delà de l’exposition.' },
+        { h: 'Médiation & rencontres', p: 'Vernissages, présentations et événements favorisant l’accès du public à l’art contemporain.' },
+        { h: 'Échanges Suisse–Chine', p: 'La mise en relation d’artistes, de professionnels et d’institutions des deux pays.' },
+        { h: 'Partenariats culturels', p: 'Musées, galeries, bibliothèques, écoles d’art et fondations partageant notre mission.' },
+      ],
+    },
+    quote: 'Un petit espace pour faire circuler beaucoup d’art, d’idées et de rencontres entre la Suisse et la Chine.',
+    ctaContact: 'Nous contacter',
+  },
+
+  association: {
+    eyebrow: 'L’association',
+    h1: 'Faire de l’art contemporain un espace de rencontre',
+    lead: 'Une structure culturelle à but non lucratif, basée à La Tour-de-Peilz, qui favorise les échanges artistiques et culturels entre la Suisse et la Chine.',
+    mission: {
+      label: 'Présentation',
+      h2: 'Notre mission',
+      paras: [
+        'À travers l’organisation d’expositions, de rencontres, de projets éditoriaux et d’actions de médiation culturelle, l’association souhaite créer des liens durables entre les artistes contemporains des deux pays, les institutions culturelles, les professionnels de l’art et le public.',
+        'Son ambition est de développer des projets accessibles et régulièrement renouvelés, permettant de faire découvrir de nouvelles pratiques artistiques tout en encourageant le dialogue entre différentes sensibilités et cultures.',
+        'L’association souhaite également contribuer au dynamisme culturel de la Riviera vaudoise en y développant un lieu de proximité consacré à l’art contemporain et aux échanges interculturels.',
+      ],
+    },
+    vision: {
+      label: 'Vision & positionnement',
+      h2: 'Construire un pont culturel durable',
+      lead: 'Notre démarche repose sur une programmation artistique régulière, une approche éditoriale complémentaire et la volonté de rendre l’art contemporain accessible dans un cadre accueillant et propice aux rencontres.',
+      cards: [
+        { h: 'Expositions', p: 'Présenter et mettre en dialogue des artistes contemporains suisses et chinois au sein de propositions artistiques renouvelées.' },
+        { h: 'Édition', p: 'Documenter et diffuser le travail des artistes à travers des publications pensées comme des prolongements durables de leurs œuvres.' },
+        { h: 'Médiation culturelle', p: 'Favoriser la découverte de l’art, les échanges entre les visiteurs et les rencontres avec les artistes.' },
+        { h: 'Échanges internationaux', p: 'Développer des collaborations artistiques et institutionnelles entre la Suisse et la Chine, au bénéfice des artistes et des publics.' },
+      ],
+    },
+    artists: {
+      label: 'Artistes & collaborations',
+      h2: 'Un réseau d’artistes suisses et chinois',
+      paras: [
+        'L’association souhaite développer un réseau d’artistes contemporains suisses et chinois partageant son intérêt pour les échanges interculturels.',
+        'Les artistes participant au programme sont sélectionnés sur la base de leur démarche artistique, de la qualité de leur travail et de leur contribution possible au dialogue entre les deux scènes culturelles.',
+        'L’association souhaite favoriser la diversité des pratiques, des parcours et des sensibilités, tout en proposant une programmation cohérente et accessible au public. Chaque collaboration est définie selon la nature du projet, avec une attention portée à l’accompagnement des artistes et à la documentation de leur travail.',
+      ],
+      cta: 'Vous êtes artiste ? Écrivez-nous',
+    },
+    committee: {
+      label: 'Notre comité',
+      h2: 'Une structure à taille humaine',
+      lead: 'L’association est portée par deux membres fondateurs réunissant des compétences complémentaires dans les domaines de la création artistique, de la direction artistique, de la communication et des échanges interculturels.',
+      people: [
+        { name: 'Zeng Gu-Mauroy', role: 'Présidente' },
+        { name: 'Joël Ferrari', role: 'Secrétaire' },
+      ],
+      note: 'L’association s’entoure de professionnels et de partenaires extérieurs selon les besoins de ses projets : artistes, photographes, traducteurs, imprimeurs, intervenants culturels et spécialistes de la médiation. Le comité exerce ses fonctions bénévolement.',
+    },
+  },
+
+  espace: {
+    eyebrow: 'Projet · La Tour-de-Peilz',
+    h1: 'Un espace vivant entre art, édition et culture',
+    lead: 'L’association souhaite ouvrir à La Tour-de-Peilz un espace culturel d’environ 30 m², accessible et accueillant, dont la programmation sera renouvelée chaque mois.',
+    concept: {
+      label: 'Le concept',
+      h2: 'Deux artistes, un dialogue',
+      text: 'Chaque exposition réunira simultanément un artiste suisse et un artiste chinois, présentés dans un même espace afin d’encourager un dialogue direct entre leurs pratiques, leurs sensibilités et leurs contextes culturels. Le format compact permettra de renouveler régulièrement l’accrochage et de présenter au fil de l’année un nombre important d’artistes.',
+    },
+    experience: {
+      label: 'Art + livre + rencontre',
+      h2: 'Une expérience en plusieurs dimensions',
+      paras: [
+        'Chaque exposition sera accompagnée de la mise en avant d’un livre d’art consacré à l’un des artistes présentés. Le public pourra découvrir les œuvres originales tout en accédant à un support éditorial qui prolonge la visite.',
+        'Les visiteurs seront également accueillis autour d’un thé traditionnel chinois. Ce geste d’hospitalité fera du lieu non seulement un espace où l’on regarde des œuvres, mais un endroit où l’on prend le temps de se rencontrer, de discuter et de découvrir.',
+      ],
+      listLabel: 'Le concept en un regard',
+      list: [
+        'Deux artistes : un artiste suisse et un artiste chinois',
+        'Une exposition d’environ un mois',
+        'Des œuvres originales présentées aux murs',
+        'Une publication mise à l’honneur',
+        'Du thé traditionnel chinois',
+        'Des rencontres entre artistes, publics et cultures',
+      ],
+    },
+    figures: {
+      label: 'Programmation prévisionnelle',
+      h2: 'Objectifs de la première année',
+      items: [
+        { n: '10', t: 'expositions' },
+        { n: '20', t: 'artistes : 10 suisses et 10 chinois' },
+        { n: '10', t: 'vernissages ou rencontres' },
+        { n: '5–10', t: 'publications mises à l’honneur' },
+        { n: '1’000+', t: 'visiteurs attendus' },
+      ],
+      note: 'Ces indicateurs sont des objectifs prévisionnels, et non des résultats déjà réalisés.',
+    },
+    why: {
+      label: 'Pourquoi La Tour-de-Peilz ?',
+      h2: 'Un ancrage au cœur de la Riviera vaudoise',
+      cards: [
+        { h: 'Un lieu de proximité', p: 'Un format intime et accueillant, favorisant la proximité avec les œuvres et les échanges avec les visiteurs.' },
+        { h: 'Une programmation souple', p: 'La taille du local permet des transformations rapides et un renouvellement régulier des expositions.' },
+        { h: 'Une présence locale', p: 'Contribuer à l’animation culturelle de La Tour-de-Peilz et enrichir l’offre d’art contemporain de la région.' },
+        { h: 'Au cœur de la Riviera', p: 'La proximité de Vevey, Montreux et du bassin lémanique inscrit le projet dans un réseau culturel plus large.' },
+      ],
+    },
+    publics: {
+      label: 'Publics',
+      h2: 'À qui s’adresse le projet ?',
+      intro: 'À un public large et diversifié, avec un ancrage dans la commune de La Tour-de-Peilz et plus largement sur la Riviera vaudoise :',
+      list: [
+        'les habitants de La Tour-de-Peilz et de la Riviera',
+        'les visiteurs de Vevey, Montreux et de la région lémanique',
+        'les amateurs d’art et les collectionneurs',
+        'les artistes, galeristes et professionnels de la culture',
+        'les institutions culturelles, les écoles d’art et les étudiants',
+        'les communautés chinoise et suisse',
+        'toute personne curieuse de création contemporaine et d’échanges interculturels',
+      ],
+    },
+  },
+
+  edition: {
+    eyebrow: 'Programme d’édition',
+    h1: 'Des livres qui prolongent le travail des artistes',
+    lead: 'L’association développe un programme éditorial consacré aux artistes contemporains de Suisse et de Chine. Chaque publication est pensée comme un document artistique durable.',
+    approach: {
+      label: 'Notre démarche',
+      h2: 'Valoriser, documenter, diffuser',
+      paras: [
+        'Chaque publication permet de valoriser les œuvres, de présenter la démarche de l’artiste et de favoriser sa découverte auprès de nouveaux publics.',
+        'Les projets éditoriaux sont sélectionnés selon leur intérêt artistique et culturel, leur contribution au dialogue entre les deux pays et leur potentiel de diffusion auprès du public et des institutions.',
+        'Certaines publications pourront être proposées à des galeries, musées, bibliothèques, écoles d’art, institutions culturelles, collectionneurs et professionnels de l’art en Suisse et en Chine.',
+      ],
+    },
+    steps: {
+      label: 'De l’œuvre au livre',
+      h2: 'Les étapes d’une publication',
+      items: ['Sélection de l’artiste', 'Photographie', 'Direction éditoriale', 'Design', 'Impression', 'Présentation & diffusion'],
+    },
+    contents: {
+      label: 'Contenu',
+      h2: 'Ce qu’une publication peut comprendre',
+      list: [
+        'la sélection et l’organisation des œuvres',
+        'la photographie professionnelle',
+        'la direction éditoriale',
+        'la conception graphique et la mise en page',
+        'une biographie de l’artiste',
+        'des textes critiques ou de commissariat',
+        'la traduction',
+        'la préparation technique et l’impression',
+        'la présentation et la diffusion auprès du public et des partenaires',
+      ],
+    },
+    quote: 'Le lieu deviendra une vitrine pour les publications, en lien direct avec les œuvres et le public.',
+  },
+
+  soutenir: {
+    eyebrow: 'Partenariats & soutien',
+    h1: 'Construire le projet ensemble',
+    lead: 'Nous développons notre programme avec des partenaires publics, culturels, institutionnels et privés qui partagent notre volonté de renforcer les échanges artistiques entre la Suisse et la Chine.',
+    forms: {
+      label: 'Formes de soutien',
+      h2: 'Comment vous pouvez contribuer',
+      cards: [
+        { h: 'Partenariat culturel', p: 'Soutenir le développement d’un dialogue artistique durable entre les deux pays.' },
+        { h: 'Soutien à la programmation', p: 'Contribuer au financement des expositions, des honoraires artistiques, des transports et des événements.' },
+        { h: 'Soutien à l’édition', p: 'Participer aux frais de photographie, de direction éditoriale, de graphisme, de traduction et d’impression.' },
+        { h: 'Partenariat de diffusion', p: 'Permettre aux publications de rejoindre musées, galeries, bibliothèques, écoles d’art et institutions.' },
+        { h: 'Mécénat & sponsoring', p: 'Associer votre entreprise ou votre nom à un projet culturel à la fois local et international.' },
+        { h: 'Événements & visibilité', p: 'Soutenir vernissages, rencontres avec les artistes, présentations de livres et événements interculturels.' },
+      ],
+    },
+    use: {
+      label: 'Utilisation des soutiens',
+      h2: 'À quoi servira le financement ?',
+      list: [
+        'participer aux coûts du local et de son aménagement',
+        'rémunérer les artistes et contribuer à la production des expositions',
+        'financer le transport, l’accrochage et la présentation des œuvres',
+        'organiser les vernissages et les rencontres publiques',
+        'soutenir la photographie, la documentation et la traduction',
+        'développer des publications artistiques et leur diffusion',
+        'faciliter l’accès au programme pour des artistes aux moyens variés',
+      ],
+      note: 'L’association poursuit une mission culturelle sans but lucratif. Les éventuels excédents sont intégralement réinvestis dans ses expositions, ses publications, ses actions de médiation et ses échanges culturels.',
+    },
+    quote: 'Soutenir l’Association Zeng Art & Culture, c’est contribuer à créer un espace durable de rencontre entre artistes, publics et cultures suisse et chinoise.',
+    cta: 'Devenir partenaire',
+    dossier: 'Notre dossier de présentation complet, avec budget et plan de financement, est disponible sur demande.',
+  },
+
+  contact: {
+    eyebrow: 'Contact',
+    h1: 'Parlons de votre projet',
+    lead: 'Artiste, partenaire, institution ou simple curieux : nous serons heureux de vous répondre.',
+    label: 'Nous écrire',
+    h2: 'Coordonnées',
+    email: 'E-mail',
+    place: 'Lieu',
+    placeValue: 'La Tour-de-Peilz, Riviera vaudoise · Suisse',
+    committee: 'Comité',
+  },
+};

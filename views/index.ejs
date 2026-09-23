@@ -1,0 +1,57 @@
+<%- include('partials/top') %>
+<% const h = t.home %>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-mark reveal" aria-hidden="true"><%- logos.mark %></div>
+    <div class="reveal">
+      <p class="eyebrow"><%= h.eyebrow %></p>
+      <h1><%= h.h1 %></h1>
+      <p class="lead"><%= h.lead %></p>
+      <div class="actions">
+        <a class="btn btn-solid" href="<%= url('association') %>"><%= h.ctaAbout %></a>
+        <a class="btn" href="<%= url('soutenir') %>"><%= h.ctaSupport %></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="label reveal"><%= h.concept.label %></p>
+    <h2 class="reveal"><%= h.concept.h2 %></h2>
+    <%- include('partials/formula', { reveal: true }) %>
+    <%- include('partials/cards', { cards: h.concept.cards, numbered: true, extra: 'reveal' }) %>
+    <div class="actions reveal"><a class="btn" href="<%= url('espace') %>"><%= h.concept.cta %></a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="label"><%= h.presentation.label %></p>
+      <h2><%= h.presentation.h2 %></h2>
+    </div>
+    <div class="reveal">
+      <p class="lead"><%= h.presentation.lead %></p>
+      <% h.presentation.paras.forEach((p) => { %><p><%= p %></p><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap">
+    <p class="label reveal"><%= h.domains.label %></p>
+    <h2 class="reveal"><%= h.domains.h2 %></h2>
+    <%- include('partials/cards', { cards: h.domains.cards, numbered: true, extra: 'reveal' }) %>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="quote quote-center reveal"><%= h.quote %></p>
+    <div class="actions reveal" style="justify-content:center"><a class="btn btn-solid" href="<%= url('contact') %>"><%= h.ctaContact %></a></div>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>

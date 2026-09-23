@@ -1,0 +1,38 @@
+<%- include('partials/top') %>
+<% const s = t.soutenir %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= s.eyebrow %></p>
+    <h1><%= s.h1 %></h1>
+    <p class="lead"><%= s.lead %></p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="label"><%= s.forms.label %></p>
+    <h2><%= s.forms.h2 %></h2>
+    <%- include('partials/cards', { cards: s.forms.cards }) %>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap split">
+    <div><p class="label"><%= s.use.label %></p><h2><%= s.use.h2 %></h2></div>
+    <div>
+      <%- include('partials/checklist', { items: s.use.list }) %>
+      <p style="margin-top:1.6rem"><%= s.use.note %></p>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="quote"><%= s.quote %></p>
+    <div class="actions"><a class="btn" href="<%= url('contact') %>"><%= s.cta %></a></div>
+    <p class="soft" style="margin-top:1.6rem"><%= s.dossier %></p>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>

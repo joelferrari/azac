@@ -1,0 +1,52 @@
+<%- include('partials/top') %>
+<% const a = t.association %>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><%= a.eyebrow %></p>
+    <h1><%= a.h1 %></h1>
+    <p class="lead"><%= a.lead %></p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= a.mission.label %></p><h2><%= a.mission.h2 %></h2></div>
+    <div><% a.mission.paras.forEach((p) => { %><p><%= p %></p><% }) %></div>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="wrap">
+    <p class="label"><%= a.vision.label %></p>
+    <h2><%= a.vision.h2 %></h2>
+    <p class="lead muted" style="max-width:60ch;margin-top:1.4rem"><%= a.vision.lead %></p>
+    <%- include('partials/cards', { cards: a.vision.cards, numbered: true }) %>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div><p class="label"><%= a.artists.label %></p><h2><%= a.artists.h2 %></h2></div>
+    <div>
+      <% a.artists.paras.forEach((p) => { %><p><%= p %></p><% }) %>
+      <div class="actions"><a class="btn" href="<%= url('contact') %>"><%= a.artists.cta %></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="label"><%= a.committee.label %></p>
+    <h2><%= a.committee.h2 %></h2>
+    <p class="lead soft" style="max-width:60ch;margin-top:1.4rem"><%= a.committee.lead %></p>
+    <div class="people">
+      <% a.committee.people.forEach((p) => { %>
+        <div class="person"><h3><%= p.name %></h3><p class="soft"><%= p.role %></p></div>
+      <% }) %>
+    </div>
+    <p class="soft" style="max-width:70ch"><%= a.committee.note %></p>
+  </div>
+</section>
+
+<%- include('partials/bottom') %>
