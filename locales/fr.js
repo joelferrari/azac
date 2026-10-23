@@ -133,8 +133,8 @@ module.exports = {
       h2: 'Une structure à taille humaine',
       lead: 'L’association est portée par deux membres fondateurs réunissant des compétences complémentaires dans les domaines de la création artistique, de la direction artistique, de la communication et des échanges interculturels.',
       people: [
-        { name: 'Zeng Gu-Mauroy', role: 'Présidente' },
-        { name: 'Joël Ferrari', role: 'Secrétaire' },
+        { name: 'Zeng GU-MAUROY', role: 'Présidente' },
+        { name: 'Joël FERRARI', role: 'Secrétaire' },
       ],
       note: 'L’association s’entoure de professionnels et de partenaires extérieurs selon les besoins de ses projets : artistes, photographes, traducteurs, imprimeurs, intervenants culturels et spécialistes de la médiation. Le comité exerce ses fonctions bénévolement.',
     },

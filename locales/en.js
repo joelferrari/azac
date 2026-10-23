@@ -133,8 +133,8 @@ module.exports = {
       h2: 'A human-scale organisation',
       lead: 'The association is led by two founding members with complementary skills in artistic creation, art direction, communication and intercultural exchange.',
       people: [
-        { name: 'Zeng Gu-Mauroy', role: 'President' },
-        { name: 'Joël Ferrari', role: 'Secretary' },
+        { name: 'Zeng GU-MAUROY', role: 'President' },
+        { name: 'Joël FERRARI', role: 'Secretary' },
       ],
       note: 'The association works with external professionals and partners as each project requires: artists, photographers, translators, printers, cultural speakers and outreach specialists. The board serves on a voluntary basis.',
     },

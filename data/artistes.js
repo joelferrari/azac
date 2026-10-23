@@ -8,7 +8,7 @@
 module.exports = [
   {
     id: 'gu-zeng',
-    name: 'Gu Zeng',
+    name: 'GU Zeng',
     country: 'cn',
     role: { fr: 'Artiste', en: 'Artist', de: 'Künstlerin', zh: '艺术家' },
     works: [
@@ -20,7 +20,7 @@ module.exports = [
   },
   {
     id: 'audrey-piguet',
-    name: 'Audrey Piguet',
+    name: 'Audrey PIGUET',
     country: 'ch',
     role: { fr: 'Photographe', en: 'Photographer', de: 'Fotografin', zh: '摄影师' },
     works: [
@@ -32,7 +32,7 @@ module.exports = [
   },
   {
     id: 'ma-jin',
-    name: 'Ma Jin',
+    name: 'MA Jin',
     country: 'cn',
     role: { fr: 'Artiste', en: 'Artist', de: 'Künstler', zh: '艺术家' },
     works: [
@@ -44,7 +44,7 @@ module.exports = [
   },
   {
     id: 'joel-ferrari',
-    name: 'Joël Ferrari',
+    name: 'Joël FERRARI',
     country: 'ch',
     role: { fr: 'Directeur artistique', en: 'Art director', de: 'Art Director', zh: '艺术总监' },
     works: [
@@ -56,7 +56,7 @@ module.exports = [
   },
   {
     id: 'wang-yan-ling',
-    name: 'Wang Yanling',
+    name: 'WANG Yanling',
     country: 'cn',
     role: { fr: 'Artiste', en: 'Artist', de: 'Künstlerin', zh: '艺术家' },
     // Plusieurs séries : chacune a son titre et ses œuvres
@@ -87,7 +87,7 @@ module.exports = [
   },
   {
     id: 'xia-wei',
-    name: 'Xia Wei',
+    name: 'XIA Wei',
     country: 'cn',
     role: { fr: 'Écrivain, musicien, peintre', en: 'Writer, musician, painter', de: 'Schriftsteller, Musiker, Maler', zh: '作家、音乐人、画家' },
     works: [

@@ -1,4 +1,4 @@
-// 中文文本（简体）— 建议由 Zeng Gu-Mauroy 审校
+// 中文文本（简体）— 建议由 Zeng GU-MAUROY 审校
 module.exports = {
   label: '中文',
   name: '中文',
@@ -133,8 +133,8 @@ module.exports = {
       h2: '小而精的团队',
       lead: '协会由两位创始成员发起，他们在艺术创作、艺术指导、传播和跨文化交流方面各有所长、优势互补。',
       people: [
-        { name: 'Zeng Gu-Mauroy', role: '会长' },
-        { name: 'Joël Ferrari', role: '秘书' },
+        { name: 'Zeng GU-MAUROY', role: '会长' },
+        { name: 'Joël FERRARI', role: '秘书' },
       ],
       note: '协会将根据项目需要，与外部专业人士和合作伙伴共同工作，包括艺术家、摄影师、译者、印刷商、文化工作者和艺术推广专家。理事会成员均为义务服务。',
     },

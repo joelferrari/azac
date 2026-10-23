@@ -133,8 +133,8 @@ module.exports = {
       h2: 'Ein Verein mit menschlichem Mass',
       lead: 'Der Verein wird von zwei Gründungsmitgliedern getragen, die sich in den Bereichen künstlerisches Schaffen, Art Direction, Kommunikation und interkultureller Austausch ergänzen.',
       people: [
-        { name: 'Zeng Gu-Mauroy', role: 'Präsidentin' },
-        { name: 'Joël Ferrari', role: 'Sekretär' },
+        { name: 'Zeng GU-MAUROY', role: 'Präsidentin' },
+        { name: 'Joël FERRARI', role: 'Sekretär' },
       ],
       note: 'Je nach Projekt arbeitet der Verein mit externen Fachleuten und Partnern zusammen: Kunstschaffende, Fotografinnen, Übersetzer, Druckereien, Kulturschaffende und Vermittlungsfachleute. Der Vorstand ist ehrenamtlich tätig.',
     },
